@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Домашнее мясо и полуфабрикаты с доставкой"
+  />
+
+  <title>Домашняя еда — мясо и полуфабрикаты</title>
+
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+ <header class="site-header">
+  <div class="container header-inner">
+    <a class="logo from-left" href="index.html">
+      <img class="logo-mark" src="images/hero.png" alt="">
+      <span>Домашняя еда</span>
+    </a>
+
+    <nav class="main-nav from-left" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+     
+    </nav>
+
+    <button
+      class="cart-button from-right"
+      id="open-cart"
+      type="button"
+      aria-label="Открыть корзину"
+      aria-expanded="false"
+      aria-controls="cart-panel"
+    >
+      <span class="cart-button__icon">Корзина</span>
+
+      <span class="cart-button__data">
+        <strong id="header-total-price">0 ₽</strong>
+
+        <small>
+          <span id="header-total-weight">0 кг</span>
+          ·
+          <span id="cart-count">0</span> товаров
+        </small>
+      </span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content from-left">
+        
+        <p class="eyebrow hero-item">Домашние продукты с доставкой</p>
+        
+
+        <h1 class="hero-item">
+          Оставь свой <span> отзыв</span>
+        </h1>
+
+        <p class="hero-description hero-item">
+          Отборное мясо, домашние полуфабрикаты и готовые блюда.
+          Выбирайте продукты онлайн — мы бережно доставим их к вам домой.
+        </p>
+
+        
+      </div>
+
+      <div class="hero-card  from-right">
+        <img
+          class="hego-card__logo"
+          src="images/herologo.png"
+          alt="Домашние мясные блюда"
+        />
+
+        <div class="hero-card__label from-right">
+          <strong>Натуральный состав</strong>
+          <span>Готовим с заботой</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<section class="reviews-section">
+  <div class="container">
+    <h1>Отзывы покупателей</h1>
+
+    <form class="review-form" id="review-form">
+      <input
+        id="review-name"
+        type="text"
+        placeholder="Ваше имя"
+        maxlength="80"
+        required
+      >
+
+      <textarea
+        id="review-text"
+        placeholder="Ваш отзыв"
+        maxlength="2000"
+        required
+      ></textarea>
+
+      <select id="review-rating" required>
+        <option value="">Выберите оценку</option>
+        <option value="5">5 — отлично</option>
+        <option value="4">4 — хорошо</option>
+        <option value="3">3 — нормально</option>
+        <option value="2">2 — плохо</option>
+        <option value="1">1 — очень плохо</option>
+      </select>
+
+      <button type="submit">
+        Отправить отзыв
+      </button>
+      <a href="index.html" class="primary-button hero-item ">
+          Смотреть каталог
+          <span>→</span>
+        </a>
+
+      <p id="review-message"></p>
+    </form>
+
+    <div class="reviews-list" id="reviews-list"></div>
+  </div>
+</section>
+
+<script src="reviews.js"></script>
+
+</body>
+</html>
